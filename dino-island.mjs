@@ -152,6 +152,19 @@ Hooks.once("init", function () {
       context.isEditable = this.isEditable;
       return context;
     }
+    _onRender(context, options) {
+      super._onRender(context, options);
+      const el = this.element;
+      // Speichern-Button
+      el.querySelector(".save-btn")?.addEventListener("click", async () => {
+        const data = {};
+        el.querySelectorAll("input, select, textarea").forEach(field => {
+          if (field.name) data[field.name] = field.type === "checkbox" ? field.checked : field.value;
+        });
+        await this.document.update(data);
+        this.close();
+      });
+    }
   }
 
   // ---- REGISTRIEREN ----
@@ -171,7 +184,7 @@ Hooks.once("init", function () {
 });
 
 // -------------------------------------------------------
-// WÜRFELFUNKTION – ohne Bonus-Dialog
+// WÜRFELFUNKTION
 // -------------------------------------------------------
 export async function rollMove(label, bonus, actor) {
   const b = parseInt(bonus) || 0;
