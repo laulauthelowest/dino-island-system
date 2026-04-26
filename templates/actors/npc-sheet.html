@@ -1,0 +1,26 @@
+<form class="dino-sheet npc" autocomplete="off" onsubmit="return false;">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    <div class="header-fields">
+      <h1><input name="name" type="text" value="{{actor.name}}" placeholder="NPC Name" /></h1>
+      <div class="field-group">
+        <label>Typ</label>
+        <input type="text" name="system.npcType" value="{{system.npcType}}" placeholder="Dinosaurier, Mensch…" />
+      </div>
+    </div>
+  </header>
+  <div class="npc-body">
+    <div class="section-block">
+      <label><strong>Beschreibung / Instinkt</strong></label>
+      <textarea name="system.description" rows="4" placeholder="Was will dieser NPC?">{{system.description}}</textarea>
+    </div>
+    <div class="section-block">
+      <label><strong>Moves / Fähigkeiten</strong></label>
+      <textarea name="system.moves" rows="4" placeholder="Was kann er tun?">{{system.moves}}</textarea>
+    </div>
+    <div class="section-block">
+      <label><strong>Notizen</strong></label>
+      <textarea name="system.notes" rows="3">{{system.notes}}</textarea>
+    </div>
+  </div>
+</form>
