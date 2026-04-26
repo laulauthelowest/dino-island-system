@@ -1,0 +1,1 @@
+{ "TYPES": { "Actor": { "hero": "Held:in", "npc": "NSC" }, "Item": { "move": "Move", "gear": "Ausrüstung" } } }

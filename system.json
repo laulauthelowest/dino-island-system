@@ -1,0 +1,19 @@
+{
+  "id": "dino-island",
+  "title": "Escape from Dino Island",
+  "description": "PbtA-System für Escape from Dino Island.",
+  "version": "3.0.0",
+  "compatibility": { "minimum": "12", "verified": "14" },
+  "authors": [{ "name": "laulauthelowest" }],
+  "esmodules": ["dino-island.mjs"],
+  "styles": ["styles/dino-island.css"],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "de", "name": "Deutsch", "path": "lang/de.json" }
+  ],
+  "template": "template.json",
+  "initiative": "2d6",
+  "url": "https://github.com/laulauthelowest/dino-island-system",
+  "manifest": "https://raw.githubusercontent.com/laulauthelowest/dino-island-system/main/system.json",
+  "download": "https://github.com/laulauthelowest/dino-island-system/archive/refs/heads/main.zip"
+}

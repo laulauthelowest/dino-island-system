@@ -1,0 +1,34 @@
+{
+  "Actor": {
+    "types": ["hero", "npc"],
+    "templates": {},
+    "hero": {
+      "class": "doctor",
+      "pronouns": "",
+      "age": 12,
+      "rumor": "",
+      "notes": "",
+      "stats": {
+        "clever": { "value": 0 },
+        "fit":    { "value": 0 },
+        "steady": { "value": 0 }
+      },
+      "injuries": {
+        "injury1": false, "injury1text": "",
+        "injury2": false, "injury2text": "",
+        "outOfCommission": false
+      },
+      "story0": false, "story1": false, "story2": false,
+      "story3": false, "story4": false
+    },
+    "npc": {
+      "npcType": "", "description": "", "moves": "", "notes": ""
+    }
+  },
+  "Item": {
+    "types": ["move", "gear"],
+    "templates": {},
+    "move": { "stat": "", "description": "" },
+    "gear": { "description": "", "quantity": 1 }
+  }
+}
